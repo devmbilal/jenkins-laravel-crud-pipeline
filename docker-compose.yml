@@ -20,6 +20,7 @@ services:
       DB_DATABASE: jenkins
       DB_USERNAME: root
       DB_PASSWORD: devmbilal
+      APP_KEY: base64:sWPgOgK3Ed7WkvDvnV7wKaeQXaOYQP8tiaHxPkecSRs=
       APP_ENV: production
       APP_DEBUG: false
       APP_URL: http://localhost
@@ -29,7 +30,7 @@ services:
     container_name: laravel_mysql
     restart: unless-stopped
     ports:
-      - "3306:3306"
+      - "3307:3306"
     environment:
       MYSQL_ROOT_PASSWORD: devmbilal
       MYSQL_DATABASE: jenkins

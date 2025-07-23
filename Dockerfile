@@ -8,7 +8,7 @@ WORKDIR /var/www
 RUN apt-get update && apt-get install -y \
     git curl zip unzip libonig-dev libxml2-dev libzip-dev \
     libpng-dev libjpeg-dev libfreetype6-dev \
-    libmcrypt-dev libpq-dev libmysqlclient-dev \
+    libmcrypt-dev libpq-dev libmariadb-dev \
     && docker-php-ext-install pdo pdo_mysql zip mbstring exif pcntl bcmath gd \
     && apt-get clean
 
