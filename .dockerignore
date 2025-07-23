@@ -1,0 +1,7 @@
+node_modules
+resources/js/
+resources/css/
+.env
+tests/
+*.log
+*.sqlite
